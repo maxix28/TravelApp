@@ -12,7 +12,7 @@ interface TravelRepository {
 
     suspend fun DeleteTicket(ticket: TicketD)
 
-    fun getAllTickets(): Flow<TicketD>
+    fun getAllTickets():Flow<List<TicketD>>
 }
 
 

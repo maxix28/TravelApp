@@ -17,6 +17,6 @@ interface TicketDao {
     suspend fun DeleteTicket(ticket: TicketD)
 
     @Query("select * from SavedTickets")
-    fun getAllTickets(): Flow<TicketD>
+    fun getAllTickets(): Flow<List<TicketD>>
 
 }

@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.example.travelapp.ui.Screens.LoginScreen
+import com.example.travelapp.ui.Screens.MyTickets
 import com.example.travelapp.ui.navigation.NavGraph
 import com.example.travelapp.ui.theme.TravelAppTheme
 import dagger.hilt.EntryPoint
@@ -28,7 +29,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    NavGraph(navHostController = rememberNavController())
+                //    NavGraph(navHostController = rememberNavController())
+                    MyTickets()
                 }
             }
         }

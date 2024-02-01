@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 
-@Database(entities = arrayOf(TicketD::class), version = 1)
+@Database(entities = arrayOf(TicketD::class), version = 2)
 abstract  class TicketDatabase :RoomDatabase(){
 
 

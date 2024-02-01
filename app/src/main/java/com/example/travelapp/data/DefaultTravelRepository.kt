@@ -9,5 +9,5 @@ class DefaultTravelRepository  @Inject constructor(private val ticketDao: Ticket
     override suspend fun SaveTicket(ticket: TicketD) = ticketDao.SaveTicket(ticket)
 
     override suspend fun DeleteTicket(ticket: TicketD) = ticketDao.DeleteTicket(ticket)
-    override fun getAllTickets(): Flow<TicketD> = ticketDao.getAllTickets()
+    override fun getAllTickets(): Flow<List<TicketD>> = ticketDao.getAllTickets()
 }
