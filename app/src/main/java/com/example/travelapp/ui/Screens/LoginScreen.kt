@@ -66,7 +66,8 @@ fun LoginScreen(modifier: Modifier = Modifier, onSuccessLogin:()->Unit) {
         Column {
             Image(
                 painter = painterResource(id = R.drawable.baseline_mode_of_travel_24),
-                contentDescription = "App Logo",
+                contentDescription = "App Logo"
+                ,
                 modifier = modifier
                     .fillMaxWidth()
                     .height(200.dp),
@@ -86,21 +87,16 @@ fun LoginScreen(modifier: Modifier = Modifier, onSuccessLogin:()->Unit) {
 //            singleLine = true,
 //            leadingIcon = { Icon(Icons.Default.Person, contentDescription = null) }
 //        )
-
                 Text(
                     text = "TravelApp",
                     modifier = modifier
-                        .fillMaxWidth()
-                        ,
+                        .fillMaxWidth(),
                     textAlign = TextAlign.Center,
                     fontFamily = FontFamily.SansSerif,
                     fontSize = 25.sp
                     //fontWeight = MaterialTheme.typography.titleLarge
                 )
-            
-
         }
-
         Spacer(modifier = Modifier.height(16.dp))
 
 //        // Password TextField
